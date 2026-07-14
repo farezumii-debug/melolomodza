@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melolo Mod - Download</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #0a0a0f 0%, #1a0033 100%);
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    .neon-glow {
+      box-shadow: 0 0 25px rgba(168, 85, 247, 0.5);
+    }
+    .video-wrapper {
+      max-width: 380px;
+      margin: 0 auto;
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 3px solid rgba(168, 85, 247, 0.4);
+      background: #000;
+    }
+    .video-wrapper::before {
+      content: '';
+      display: block;
+      padding-top: 177.78%;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+  </style>
+</head>
+<body class="text-white">
+  <div class="max-w-md mx-auto px-5 py-8">
+
+    <!-- Header -->
+    <div class="flex justify-center mb-6">
+      <div class="inline-flex items-center gap-3 bg-black/70 px-6 py-3 rounded-3xl border border-purple-500/40">
+        <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center neon-glow">
+          <i class="fas fa-heart text-2xl"></i>
+        </div>
+        <div>
+          <span class="font-bold text-2xl tracking-wider">MELOLO</span>
+          <span class="block text-xs text-purple-400 -mt-1">MOD</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mb-10">
+      <h1 class="text-4xl font-bold tracking-tighter">Melolo Mod</h1>
+      <p class="text-purple-300 mt-2">Versi Terbaru • Full Premium Unlocked</p>
+    </div>
+
+    <!-- Warning -->
+    <div class="bg-gradient-to-r from-amber-500/10 to-transparent border border-amber-500/30 rounded-3xl p-5 mb-10">
+      <div class="flex gap-4">
+        <i class="fas fa-exclamation-triangle text-3xl text-amber-400 mt-1"></i>
+        <div>
+          <p class="font-bold text-amber-300">WAJIB TONTON VIDEO TUTORIAL</p>
+          <p class="text-slate-300 text-sm mt-1">Agar kamu paham cara install dan menghindari kendala.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video -->
+    <div class="mb-10">
+      <div class="flex items-center justify-between mb-3 px-1">
+        <span class="font-medium text-purple-300 flex items-center gap-2">
+          <i class="fas fa-play-circle"></i> VIDEO TUTORIAL
+        </span>
+        <span class="text-xs bg-purple-900 px-3 py-1 rounded-full">9:16</span>
+      </div>
+      <div class="video-wrapper neon-glow">
+        <iframe src="https://aceimg.com/upload/?f=u6YutRUzG.mp4" 
+                allowfullscreen allow="autoplay"></iframe>
+      </div>
+    </div>
+
+    <!-- Download Button -->
+    <div class="mb-8">
+      <button onclick="handleDownload()" id="downloadBtn"
+              class="w-full py-8 bg-gradient-to-r from-purple-600 via-pink-600 to-violet-600 rounded-3xl text-2xl font-bold flex items-center justify-center gap-4 shadow-2xl active:scale-95 transition-all">
+        <i id="btnIcon" class="fas fa-download text-3xl"></i>
+        <span id="btnText">DOWNLOAD MELOLO MOD</span>
+      </button>
+    </div>
+
+    <div class="text-center text-slate-500 text-xs mt-12">
+      Link aman & terverifikasi<br>
+      Harap tonton video sampai selesai sebelum download
+    </div>
+  </div>
+
+  <script>
+    function handleDownload() {
+      const btn = document.getElementById('downloadBtn');
+      const icon = document.getElementById('btnIcon');
+      const text = document.getElementById('btnText');
+
+      btn.disabled = true;
+      icon.classList.remove('fa-download');
+      icon.classList.add('fa-spinner', 'animate-spin');
+      text.textContent = 'MEMPROSES...';
+
+      window.open('https://move2link.co/1640896', '_blank');
+
+      setTimeout(() => {
+        btn.disabled = false;
+        icon.classList.remove('fa-spinner', 'animate-spin');
+        icon.classList.add('fa-download');
+        text.textContent = 'DOWNLOAD MELOLO MOD';
+      }, 3000);
+    }
+  </script>
+</body>
+  </html>
